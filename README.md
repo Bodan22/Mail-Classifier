@@ -89,20 +89,6 @@ The model achieves:
 - Balanced precision and recall
 - Detailed metrics available in classification report
 
-## Functions
-
-### text_process(text)
-Processes input text by:
-- Removing punctuation
-- Removing stopwords
-- Tokenizing the text
-```python
-def text_process(text):
-    no_punct = [char for char in text if text not in string.punctuation]
-    no_punct = ''.join(no_punct)
-    clean = [word for word in no_punct.split() if word.lower() not in stopwords.words('english')]
-    return clean
-```
 
 ## Model Persistence
 
